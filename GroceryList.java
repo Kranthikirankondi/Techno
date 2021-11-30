@@ -37,35 +37,21 @@ public class GroceryList {
 
 	// *********************************************************************************************************
 	public static void modify() {
-		System.out.println("Enter the old item ");
-		String old = scanner.next();
-		System.out.println("Enter the new item ");
-		String str = scanner.next();
-		String print = repalce(old, str);
-		System.out.println(print);
-		System.out.println("**************Modify is Done******************");
-		
-		
-//		System.out.println("enter the item to change");
-//		int change =scanner.nextInt();
-//		System.out.println("Enter the item number to change");
-//		int change1 = scanner.nextInt();
-//		if(change<list.size()) {
-//		list.set(change+1, list.get(change1+1));
-//		}
-//		else {
-//			System.out.println("Enter the valid index number");
-//		}
-//		
-	}
 
+  System.out.println("enter the old item");
+	int change =scanner.nextInt();
+	System.out.println("Enter the new item ");
+	int change1 = scanner.nextInt();
+	if(change1!=change) {
+		list.remove(change1);
+		list.add(change1);
+		}
+	System.out.println(list);
 	
-
-	private static String repalce(String old, String str) {
-		// TODO Auto-generated method stub
-		return null;
+	System.out.println("**************Modify is Done******************");
 	}
 
+//**********************************************************************************
 	public static void menu() {
 
 		System.out.println("Enter Your Choices");
