@@ -1,0 +1,30 @@
+package array_programs;
+
+import java.util.Scanner;
+
+public class ArraySumOfEven 
+{
+
+	public static void main(String[] args) 
+	{
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the Array Size:");
+		int size = scanner.nextInt();
+		int []arr = new int[size];
+		
+		int sum = 0;
+		System.out.println("Enter the Array :");
+		for (int i =0;i<arr.length;i++)
+		{
+			arr[i]=scanner.nextInt();
+			
+			if(i%2==0)
+			{
+				sum+=arr[i];
+			}
+		}
+        System.out.println("The sum of the Array Even Numbers is : "+sum );
+	}
+
+}
